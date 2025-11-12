@@ -2,13 +2,18 @@
 # Working with modules of code
 
 # import the math module, which contains features for working with mathematics
+import math
 
+print("Sq root of 16", math.sqrt(16))
 
 # import a specific part of the module so you can refer to it more easily
-
+from math import pi
+print(pi)
 
 # import a module and give it a different name
-
+import random as r
+num = r.randint(1,1600)
+print("Sq root of", num, "is:", math.sqrt(num))
 
 # the math module contains lots of pre-built functions
 
@@ -32,3 +37,5 @@ data = [
 ]
 
 # Create a formatted table
+from tabulate import tabulate
+print(tabulate(data, headers="firstrow", tablefmt="fancy_grid"))
